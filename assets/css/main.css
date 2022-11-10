@@ -1,0 +1,135 @@
+.pie{
+    text-align: center;
+    background-color: rgba(24, 23, 23, 0.986);
+}
+.logoglg{
+    width: 50px;
+}
+.pietexto{
+    color: white;
+}
+
+/*MENU CARRITO*/
+.submenu {
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+}
+
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    max-width: 600px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.066);
+}
+
+
+/*card*/
+.card{
+    background-color: rgba(125, 125, 125, 0.74);
+}
+.imgFitMiniatura{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.imgFitFull{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info-card .precio {
+    font-size: 18px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.info-card .precio span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.btn-info{
+    color: white;
+    background-color: rgb(31, 91, 36);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-secondary{
+    background-color: rgb(21, 72, 21);
+} 
+.btn-secondary:hover{
+background-color:  green;
+}
+
+a.borrar-auto {
+    background-color: rgb(211, 100, 100);
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+a.borrar-auto:hover {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.table tbody#listaCarrito tr td {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.contentSpinnerLoading{
+    background-color: rgb(20 20 20 / 42%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg);}
+}
+.spinner {        
+    border: 8px solid rgba(47, 14, 14, 0.547);
+    border-left-color: hwb(124 12% 56% / 0.868);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1.2s linear infinite;
+}
+
+.comprar{
+    color: white;
+    background-color: hwb(124 12% 56% / 0.868);
+}
+.total{
+    text-align: center;
+}

@@ -1,0 +1,103 @@
+{
+    "autos": [
+        {
+            "_id": "201",
+            "marca": "Fiat",
+            "nombre": "Argo",
+            "modelo": "2000",
+            "color": "negro",
+            "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_742192-MLA50463631044_062022-F.webp",
+            "precio": 2200000
+        },
+        {
+            "_id": "202",
+            "marca": "Ford",
+            "nombre": "Ranger",
+            "modelo": "2015",
+            "color": "gris",
+            "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_894505-MLA25028831902_082016-F.webp",
+            "precio": 3200000
+        },    
+        {
+            "_id": "203",
+            "marca": "Citroen",
+            "nombre": "C3",
+            "modelo": "2003",
+            "color": "blanco",
+            "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_765243-MLA51850784193_102022-F.webp",
+            "precio": 1500000
+        },    
+        {
+            "_id": "204",
+            "marca": "Bmw",
+            "nombre": "Serie 1",
+            "modelo": "2018",
+            "color": "azul",
+            "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_830749-MLA52043855118_102022-F.webp",
+            "precio": 5200000
+        },    
+        {
+            "_id": "205",
+            "marca": "Ford",
+            "nombre": "Mustang",
+            "modelo": "2000",
+            "color": "azul",
+            "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_993903-MLA51954941462_102022-F.webp",
+            "precio": 8200000
+        },    
+        {
+            "_id": "206",
+            "marca": "Chevrolet",
+            "nombre": "Cruze",
+            "modelo": "2005",
+            "color": "Negro",
+            "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_921642-MLA45975661166_052021-F.webp",
+            "precio": 2000000
+        },    
+        {
+            "_id": "207",
+            "marca": "Fiat",
+            "nombre": "Cronos",
+            "modelo": "2023",
+            "color": "gris",
+            "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_833933-MLA52086645353_102022-F.webp",
+            "precio": 3000000
+        },    
+        {
+            "_id": "208",
+            "marca": "Toyota",
+            "nombre": "Corola",
+            "modelo": "2019",
+            "color": "Blanco",
+            "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_774302-MLA51676616807_092022-F.webp",
+            "precio": 3820000
+        },    
+        {
+            "_id": "209",
+            "marca": "Nissan",
+            "nombre": "sentra",
+            "modelo": "2022",
+            "color": "Negro",
+            "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_649038-MLA51469429826_092022-F.webp",
+            "precio": 3900000
+        },    
+        {
+            "_id": "210",
+            "marca": "Toyota",
+            "nombre": "Hilux",
+            "modelo": "2020",
+            "color": "Rojo",
+            "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_868352-MLA48764868916_012022-F.webp",
+            "precio": 5000000
+        },    
+        {
+            "_id": "211",
+            "marca": "Renault",
+            "nombre": "Stepway",
+            "modelo": "2016",
+            "color": "Negro",
+            "foto": "https://http2.mlstatic.com/D_NQ_NP_756436-MLA32242592542_092019-O.jpg",
+            "precio": 2200000
+        }
+    ]
+}
