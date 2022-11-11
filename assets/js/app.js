@@ -150,8 +150,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-
 /* BUSCAR AUTO EN EL ARCHIVO JSON*/
 
 const formulario = document.querySelector('#formulario')
@@ -169,14 +167,7 @@ formulario.addEventListener('submit', function (e) {
 
 const findAuto = ()=>{
     contentSpinnerLoading.style.display = 'flex';
-    fetch(`http://localhost:3000/autos`) //se conecto al archivo JSON con live server de node.
-/* PROFE ENCONTRE LA FORMA DE CONECTAR EL ARCHIVO JSON LOCAL CON LIVE SERVE. MIRE ESTE VIDEO: https://www.youtube.com/watch?v=OAOCa2qYq2Y&t=565s */
-/* https://github.com/typicode/json-server#getting-started
-Así funciona el json local. Abrir nueva terminal poner siguientes comandos:
-instalar paquete json
-npm init -y
-npm i json-server
-npm run server */
+    fetch(`https://mocki.io/v1/4ec1b27e-29d3-41e6-943c-c897f4a7bf72`) // fackke api form https://mocki.io/fake-json-api
 
         .then( response => {
             if (!response.ok) {
