@@ -155,6 +155,8 @@ document.addEventListener("DOMContentLoaded", () => {
 const formulario = document.querySelector('#formulario')
 const contentSpinnerLoading = document.querySelector('.contentSpinnerLoading')
 contentSpinnerLoading.style.display = 'none';
+const autosEncontrados = document.querySelector('#autosEncontrados')
+
 
 /* ESCRIBE AUTO A BUSCAR */
 formulario.addEventListener('submit', function (e) {
@@ -162,12 +164,17 @@ formulario.addEventListener('submit', function (e) {
     const inputBuscador = document.querySelector('#escribeAuto').value
     if (inputBuscador.length > 0) {//si imput es mayor a un digito.
         findAuto(inputBuscador)
+    }else{
+        Swal.fire({
+            icon: 'error',
+            title: 'Debes ingresar algun valor.',
+        })
     }
 })
 
 const findAuto = ()=>{
     contentSpinnerLoading.style.display = 'flex';
-    fetch(`https://mocki.io/v1/4ec1b27e-29d3-41e6-943c-c897f4a7bf72`) // fackke api form https://mocki.io/fake-json-api
+    fetch(`https://mocki.io/v1/408f01c3-c602-4be2-b960-1462f160a198`) // fackke api form https://mocki.io/fake-json-api
 
         .then( response => {
             if (!response.ok) {
@@ -175,27 +182,25 @@ const findAuto = ()=>{
             }
             response.json()
                 .then( data =>{
-                    console.log(data)
-                    const { Search } = data 
-                    imprimirData( Search )
                     contentSpinnerLoading.style.display = 'none';
+                    const { autos } = data
+/*                     autosFiltrados = data.filter( autos => autos.nombre === inputBuscador ); */
+                    imprimirData(autos)// callback
                 })
-        .catch(
-        Swal.fire('error')
-        )
         })
 }
 
+/* if( inputBuscador == nombre || inputBuscador == marca) */
 
 /* IMPRIMIR AUTO BUSCADO SI ES QUE EXISTE EN EL JSON */
-const imprimirData = ( cardAuto ) => {
-console.log(cardAuto)
-    if( cardAuto !== undefined ){
-        data.forEach(( element) => {
+const imprimirData = ( infoAuto ) => {
+console.log(infoAuto)
+    if( infoAuto !== undefined ){
+        autos.forEach(( element, index) => {
             const { foto, nombre, marca, precio, _id } = element//desectructuración del resultado de la busqueda
-            insertDOMcontent.innerHTML += `<div class="col-md-4">
+            autosEncontrados.innerHTML += `<div class="col-md-4">
             <div class="card mb-5">
-                <img class="imgFitFull" src="${foto}" class="card-img-top" alt="...">
+                <img class="imgFitFull" src="${foto}${index}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <div class="info-card">
                         <h2 class="card-title">${nombre}</h5>
