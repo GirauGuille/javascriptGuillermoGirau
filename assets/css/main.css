@@ -1,8 +1,31 @@
+.imgRedonda {
+    width: 60%;
+    height: 12rem;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.textoMarketing{
+    text-align: center;
+}
+.textoSucur{
+    text-align: center;
+    margin-top: 10px;
+}
+.sucur{
+    margin-bottom: 20px;
+}
+
 .pie{
     text-align: center;
     background-color: rgba(24, 23, 23, 0.986);
 }
+
 .logoglg{
+    margin-top: 20px;
     width: 50px;
 }
 .pietexto{
