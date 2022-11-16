@@ -18,12 +18,10 @@
 .sucur{
     margin-bottom: 20px;
 }
-
 .pie{
     text-align: center;
     background-color: rgba(24, 23, 23, 0.986);
 }
-
 .logoglg{
     margin-top: 20px;
     width: 50px;
@@ -32,6 +30,23 @@
     color: white;
 }
 
+.formSuscribete{
+    background-color: rgb(24, 28, 24);
+    margin-bottom: 20px;
+    margin-top: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.suscribete{
+    color: white;
+}
+.enviar{
+    margin-bottom: 15px;
+}
+.imputsForm{
+    width: 80%;
+}
 /*MENU CARRITO*/
 .submenu {
     position: relative;
@@ -55,6 +70,10 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.066);
 }
 
+.respuesta{
+    background-color: black;
+    color: white;
+}
 
 /*card*/
 .card{
